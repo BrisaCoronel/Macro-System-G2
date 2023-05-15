@@ -1,8 +1,13 @@
+.contenedores{
+  display: flex;
+  gap: 17vw;
+  margin: 80px;
+  margin-bottom: 28px;
+  width: 1vw;
+  height: 62vh;
+}
 .contenedores-principal{
-    width: 47rem;
-    height: 32rem;
-    margin: 6rem 61rem;
-    display: flex;
+    flex: 1;
     align-items: center;
     justify-content: center;
     background-color: rgb(0 0 0 /0.47);
@@ -14,7 +19,6 @@
 }
 .contenedor-texto-tickets{
     text-align: center;
-    padding-top: 3.5rem;
     font-size: 6rem;
     line-height: 6.5rem;
 }
@@ -33,7 +37,6 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(0 0 0 /0.47);
-  box-shadow: 0 3px 130px 1px rgb(0 0 0 /100%);
 }
 
 .contendorpequeno-texto{
@@ -92,3 +95,17 @@ header {
     border: none; /* elimina el borde alrededor de la imagen */
   }
 
+  .Contenedorizq {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 /0.47);
+
+  }
+  .imgizq {
+    padding-top: 75px;
+    padding-right: 4.4rem;
+    height: 25rem; /* establece la altura de la imagen a 50 píxeles */
+    width: auto; /* ajusta el ancho de la imagen de manera proporcional a su altura */
+    border: none; /* elimina el borde alrededor de la imagen */
+  }

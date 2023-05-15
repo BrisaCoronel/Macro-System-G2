@@ -5,14 +5,20 @@ import "../Stylesheets/Contenedores.css";
 export function Contenedorprincipal(props) {
   return (
     <div className="contenedores">
+      <div className='Contenedorizq'>
+          <img className='imgizq'
+          src={require(`../imagenes/${props.imagen}.png`)}
+          alt='Imagen izq'/>
+        <div className='contenedorizq-texto'>
+        </div>
+      </div>
       <div className="contenedores-principal">
-
-      
        <div className="contenedor-tickets">
           <p className="contenedor-texto-tickets">TICKETS <br/>TOTALES</p>
           <p className="contenedor-cantidad-tickets">{props.num}</p>
        </div>
       </div>
+      
     </div>
   );
   
@@ -46,22 +52,8 @@ export function Header(props) {
     </header>
   );
 }
-export function contenedorizq(props){
-  return(
-    <div className='contenedorizq'>
-        <img className='contenedorizq-imagen'
-        src={require(`${props.imagenizq}`)}
-        alt='Imagen izq'/>
-      <div className='contenedorizq-texto'>
-        
-      </div>
-    </div>
-  );
-}
 export default{
   Contenedorprincipal,
   Header,
   Contenedorsec
 }
-
-

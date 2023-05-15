@@ -1,15 +1,17 @@
 import React, {useState} from "react";
-import Modal from "./Componentes/Modal";
+import {Modal} from "./Componentes/Modal";
 import {Contenedorprincipal, Contenedorsec, Header} from "./Componentes/Contenedor-principal";
+
 function App() {
   const [estadoModal, cambiarEstadoModal]  = useState(true);
   return (
     <div>
-      
       <Header 
+      
       linkUrl="#"
       imagen="logo" 
-      altText="Logo Ejemplo" />
+      altText="Logo Ejemplo" 
+      />
       <div>
         <Contenedorprincipal 
         num="800"
@@ -21,7 +23,7 @@ function App() {
         cambiarEstado={cambiarEstadoModal}
       />
       <Contenedorsec />
-      
+    
     </div>
   );
 }

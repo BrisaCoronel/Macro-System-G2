@@ -11,25 +11,27 @@
   }
 
 .ContenedorModal {
-    width: 40rem;
-    min-height: 25rem;
+    display: flex;
+    gap: 17vw;
+    width: 850px;
+    height: 500px;
     background: rgba(11, 91, 116, 100);
     position: relative;
-    border: 0.4rem solid white;
-    padding: 0rem;
+    border: 6px solid white;
+    padding: 0px;
 }
 
 .BotonCerrar {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2.5rem;
-    height: 2.5rem;
+    top: 16px;
+    right: 16px;
+    width: 35px;
+    height: 35px;
     border: none;
     background: none;
     cursor: pointer;
     transition: 0.3s case all;
-    border-radius: 0.3rem;
+    border-radius: 5px;
     color: #000;
 }
   
@@ -45,24 +47,33 @@
 .Contenido {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-top: 80px;
+}
+
+#imgSad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 500px;
 }
 
 .Contenido h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 55px;
     font-weight: bold;
-    margin-left: 5rem;
-    margin-bottom: 7rem;
+    margin-left: 310px;
+    margin-bottom: 55px;
     color: #fff;
 }
   
 .Contenido p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight: bold;
     font-style: italic;
-    margin-bottom: 1rem;
+    margin-left: 310px;
+    margin-bottom: 16px;
     color: #fff;
 }
   

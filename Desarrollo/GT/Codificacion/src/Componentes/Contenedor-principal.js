@@ -1,59 +1,57 @@
 import React from "react";
+import { Link, useLocation } from 'react-router-dom';
 import "../Stylesheets/Contenedores.css";
-
 
 export function Contenedorprincipal(props) {
   return (
     <div className="contenedores">
       <div className='Contenedorizq'>
-          <img className='imgizq'
+        <img className='imgizq'
           src={require(`../imagenes/${props.imagen}.png`)}
-          alt='Imagen izq'/>
-        <div className='contenedorizq-texto'>
-        </div>
+          alt='Imagen izq' />
+        <div className='contenedorizq-texto'></div>
       </div>
       <div className="contenedores-principal">
-       <div className="contenedor-tickets">
-          <p className="contenedor-texto-tickets">TICKETS <br/>TOTALES</p>
+        <div className="contenedor-tickets">
+          <p className="contenedor-texto-tickets">TICKETS <br />TOTALES</p>
           <p className="contenedor-cantidad-tickets">{props.num}</p>
-       </div>
+        </div>
       </div>
-      
     </div>
   );
-  
 }
+
 export function Contenedorsec(props) {
-  return (
-    <div className="contenedorpequeno">
-      <p href="#" className="contendorpequeno-texto">Ver conteo en tiempo real</p>
-    </div>
-  );
-  
+  const location = useLocation();
+
+  if (location.pathname === "/") {
+    return (
+      <div className="contenedorpequeno">
+        <Link to="/conteo" className="contendorpequeno-texto">Ver conteo en <br /> tiempo real</Link>
+      </div>
+    );
+  }
+
+  return null;
 }
+
 export function Header(props) {
   return (
     <header>
       <div id="logo">
-        <c href={props.linkUrl}>
+        <Link to={props.linkUrl}>
           <img className="img"
-          src={require(`../imagenes/${props.imagen}.png`)} 
-          alt={props.altText} />
-        </c>
+            src={require(`../imagenes/${props.imagen}.png`)}
+            alt={props.altText} />
+        </Link>
       </div>
       <nav id="nav">
         <ul>
-          <li><a href="#">Historial</a></li>
-          <li><a href="#">Geolocalización</a></li>
-          <li><b href="#" className="home">Home</b></li>
+          <li><Link to="/historial">Historial</Link></li>
+          <li><Link to="/geolocalizacion">Geolocalización</Link></li>
+          <li><Link to="/" className="home">Home</Link></li>
         </ul>
-
       </nav>
     </header>
   );
-}
-export default{
-  Contenedorprincipal,
-  Header,
-  Contenedorsec
 }

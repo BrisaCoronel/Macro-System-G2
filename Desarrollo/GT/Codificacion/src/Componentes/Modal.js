@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import "../Stylesheets/Modal.css";
+import imagesad from '../imagenes/sad-image.png';
 
 export function Modal ({estado, cambiarEstado}){
     return (
@@ -14,6 +15,9 @@ export function Modal ({estado, cambiarEstado}){
                             </svg>
                         </div>
                         <div className="Contenido">
+                            <img id='imgSad'
+                            src={imagesad}
+                            alt="Sin Tickets"/>
                             <h1 className = "tittulo">SE HAN ACABADO<br/>LOS TICKETS</h1>
                             <p className = "parrafo">SUERTE PARA<br/>LA SIGUIENTE!!</p>
                         </div>

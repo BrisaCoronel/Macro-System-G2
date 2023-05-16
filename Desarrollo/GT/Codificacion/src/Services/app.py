@@ -6,15 +6,19 @@ app.secret_key = 'caramandunga'
 app.debug = True
 
 # Ruta para obtener los datos de los tickets
-@app.route('/', methods=['GET'])
-def mostrar_cantidad_tickets():
+@app.route('/obtener_cantidad_tickets', methods=['GET'])
+def obtener_cantidad_tickets_route():
     cantidad_tickets = obtener_cantidad_tickets()
 
     if cantidad_tickets is None:
-        flash('¡Se han agotado los tickets!', 'warning')
-        return redirect('/')
+        return jsonify({'cantidad_tickets': None})
 
-    return str(cantidad_tickets)
+    return jsonify({'cantidad_tickets': cantidad_tickets})
+
+# Ruta principal
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run()

@@ -1,0 +1,114 @@
+.ConteoPrincipal{
+    display: flex;
+    gap: 25vw;
+    padding-top: 100px;
+    margin-bottom: 28px;
+    width: 1vw;
+    height: 50vh;
+    position: relative;
+}
+
+.circle {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: rgb(194,161,183);
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-45%);
+  }
+  
+.ContenedorIzq{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    position: relative;
+}
+
+.ContenedorIzq-titulo{
+    position: relative;
+    left: 70px;
+    padding-top: 80px;
+    color:black;
+    font-weight: 900;
+    text-align: center;
+    font-size: 85px;
+    line-height: 85px;
+}
+
+.ContenedorIzq-descripcion{
+    position: absolute;
+    left: 100px;
+    color: rgb(0, 0, 0, 61%);
+    font-weight: normal;
+    text-align: center;
+    font-size: 29px;
+}
+
+.contenedores-principal{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 520px;
+    background-color: rgb(0 0 0 /0.47);
+    padding-right: 270px;
+    padding-left: 270px;
+}
+
+.contenedor-restantes{
+    font-family: Roboto, sans-serif;
+    color:white;
+    font-weight: bold;
+}
+
+.contenedor-texto-restantes{
+    text-align: center;
+    font-size: 85px;
+    line-height: 85px;
+}
+
+.contenedor-cantidad-restantes{
+    text-align: center;
+    font-size: 150px;
+    padding-bottom: 5px;
+    line-height: 0;
+}
+
+.contenedortiempoPequeno{
+    display: flex;
+    position: absolute;
+    gap: 30px;
+    width: 1045px;
+    height: 100px;
+    left: 1135px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 /0.55);
+}
+
+.contenedor-restante-tiempo{
+    flex: 1;
+    text-decoration: none;
+    position: absolute;
+    left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.contenedor-numero-tiempo{
+    flex: 1;
+    position: absolute;
+    text-decoration: none;
+    font-size: 30px;
+    right: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}

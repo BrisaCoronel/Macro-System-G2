@@ -1,20 +1,16 @@
 .contenedores{
   display: flex;
-  gap: 11vw;
-  padding-top: 180px;
-  margin-bottom: 28px;
-  width: 1vw;
+  gap: 8vw;
+  padding-top: 10vh;
+  margin-bottom: 8vh;
+  width: 40vw;
   height: 50vh;
 }
 .contenedores-principal{
   flex: 1;
   align-items: center;
   justify-content: center;
-  width: 800px;
-  height: 520px;
   background-color: rgb(0 0 0 /0.47);
-  padding-right: 270px;
-  padding-left: 270px;
 }
 .contenedor-tickets{
   font-family: Roboto, sans-serif;
@@ -23,22 +19,21 @@
 }
 .contenedor-texto-tickets{
   text-align: center;
-  font-size: 85px;
-  line-height: 85px;
+  font-size: 5rem;
+  line-height: 8vh;
 }
 .contenedor-cantidad-tickets{
   text-align: center;
-  font-size: 150px;
-  padding-bottom: 5px;
+  font-size: 9rem;
   line-height: 0;
 }
 .contenedorpequeno{
   position: relative; 
-  width: 450px;
-  height: 75px;
-  left: 1450px;
-  padding-top: 10px;
-  padding-bottom:20px ;
+  width: 22vw;
+  height: 8vh;
+  left: 61vw;
+  padding-top: 1vh;
+  padding-bottom:2vh;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -49,7 +44,7 @@
 .contendorpequeno-texto{
   display: flex;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
   font-style: italic;
   text-align: center;
@@ -73,7 +68,7 @@ header {
     padding: 50px;
     display: flex;
     font-size: 2rem;
-    padding-right: 1.5rem;
+    padding-right: 1.25vw;
 
   }
   
@@ -105,14 +100,14 @@ header {
 
   .Contenedorizq {
     flex: 1;
-    height: 520px; 
+    height: 54vh; 
     background-color: rgb(0 0 0 /0.47);
 
   }
   .imgizq {
-    padding-top: 30px;
-    padding-right: 30px;
-    height: 460px; /* establece la altura de la imagen a 50 píxeles */
-    width: 900px; /* ajusta el ancho de la imagen de manera proporcional a su altura */
+    padding-top: 2vh;
+    padding-right: 1vw;
+    height: 50vh; /* establece la altura de la imagen a 50 píxeles */
+    width: 40vw; /* ajusta el ancho de la imagen de manera proporcional a su altura */
     border: none; /* elimina el borde alrededor de la imagen */
   }

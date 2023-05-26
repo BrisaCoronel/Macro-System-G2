@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "../Stylesheets/Conteo.css";
 
+
 export function ContenedorConteo(props) {
   return (
     <div className="ConteoPrincipal">

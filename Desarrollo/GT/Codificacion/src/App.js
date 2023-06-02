@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Modal } from "./Componentes/Modal";
 import { Contenedorprincipal, Contenedorsec, Header } from "./Componentes/Contenedor-principal";
 import { ContenedorConteo, ContenedorTiempo } from "./Componentes/Conteo";
-import { ContenedorHistorial } from "./Componentes/Historial";
+import { Historial } from "./Componentes/Historial";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -59,9 +59,7 @@ function App() {
         <Routes>
           <Route path="/historial" element={
             <div>
-              <ContenedorHistorial>
-                
-              </ContenedorHistorial>
+              <Historial/>
             </div>
           } />
         </Routes>

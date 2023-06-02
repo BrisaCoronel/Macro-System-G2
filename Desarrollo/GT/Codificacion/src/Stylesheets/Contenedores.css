@@ -1,6 +1,6 @@
 .contenedores{
   display: flex;
-  gap: 6.8vw;
+  gap: 12vw;
   padding-top: 8.5vh;
   margin-bottom: 11vh;
   width: 40vw;
@@ -31,7 +31,7 @@
   position: relative; 
   width: 22vw;
   height: 8vh;
-  left: 60vw;
+  left: 63vw;
   padding-top: 1vh;
   padding-bottom:2vh;
   border-radius: 50px;

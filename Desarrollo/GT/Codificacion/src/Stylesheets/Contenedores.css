@@ -1,10 +1,10 @@
 .contenedores{
   display: flex;
-  gap: 8vw;
-  padding-top: 10vh;
-  margin-bottom: 8vh;
+  gap: 6.8vw;
+  padding-top: 8.5vh;
+  margin-bottom: 9vh;
   width: 40vw;
-  height: 50vh;
+  height: 45vh;
 }
 .contenedores-principal{
   flex: 1;
@@ -31,7 +31,7 @@
   position: relative; 
   width: 22vw;
   height: 8vh;
-  left: 61vw;
+  left: 57vw;
   padding-top: 1vh;
   padding-bottom:2vh;
   border-radius: 50px;
@@ -100,14 +100,14 @@ header {
 
   .Contenedorizq {
     flex: 1;
-    height: 54vh; 
+    height: 45vh; 
     background-color: rgb(0 0 0 /0.47);
 
   }
   .imgizq {
     padding-top: 2vh;
     padding-right: 1vw;
-    height: 50vh; /* establece la altura de la imagen a 50 píxeles */
+    height: 41vh; /* establece la altura de la imagen a 50 píxeles */
     width: 40vw; /* ajusta el ancho de la imagen de manera proporcional a su altura */
     border: none; /* elimina el borde alrededor de la imagen */
   }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Modal } from "./Componentes/Modal";
 import { Contenedorprincipal, Contenedorsec, Header } from "./Componentes/Contenedor-principal";
 import { ContenedorConteo, ContenedorTiempo } from "./Componentes/Conteo";
+import { Historial } from "./Componentes/Historial";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -52,6 +53,13 @@ function App() {
                 num2="00:30:00"
               />
               {cantidadTickets === null && <Modal estado={estadoModal} cambiarEstado={cambiarEstadoModal} />}
+            </div>
+          } />
+        </Routes>
+        <Routes>
+          <Route path="/historial" element={
+            <div>
+              <Historial/>
             </div>
           } />
         </Routes>

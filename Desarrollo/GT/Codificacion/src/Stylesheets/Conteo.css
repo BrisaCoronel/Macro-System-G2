@@ -5,11 +5,12 @@
     margin-bottom: 5vh;
     width: 1vw;
     height: 50vh;
+    position: relative;
 }
 
 .circle {
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 700px;
     border-radius: 50%;
     background-color: rgb(194,161,183);
     overflow: hidden;
@@ -28,7 +29,7 @@
 
 .ContenedorIzq-titulo{
     position: relative;
-    left: 5vw;
+    left: 70px;
     padding-top: 80px;
     color:black;
     font-weight: 900;
@@ -39,8 +40,7 @@
 
 .ContenedorIzq-descripcion{
     position: absolute;
-    left: 5vw;
-    bottom: 10vh;
+    left: 100px;
     color: rgb(0, 0, 0, 61%);
     font-weight: normal;
     text-align: center;
@@ -48,10 +48,7 @@
 }
 
 .contenedores-principal{
-    position: relative;
-    display: flex;
     flex: 1;
-    left: 10vw;
     align-items: center;
     justify-content: center;
     width: 40vw;

@@ -4,7 +4,7 @@ import { Contenedorprincipal, Contenedorsec, Header } from "../Componentes/Conte
 import { ContenedorConteo, ContenedorTiempo } from "../Componentes/Conteo";
 import { Historial } from "../Componentes/Historial";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import "../Stylesheets/App.css";
 function App() {
   const [estadoModal, cambiarEstadoModal] = useState(true);
   const [cantidadTickets, setCantidadTickets] = useState(null);

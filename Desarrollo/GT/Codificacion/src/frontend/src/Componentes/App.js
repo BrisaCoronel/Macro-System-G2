@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { obtenerCantidadTickets } from "../api/api";
-
+import "../Stylesheets/App.css";
 function App() {
   const [cantidadTickets, setCantidadTickets] = useState(null);
 

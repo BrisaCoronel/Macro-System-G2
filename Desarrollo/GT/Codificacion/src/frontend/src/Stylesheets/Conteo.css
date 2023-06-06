@@ -78,6 +78,7 @@
 }
 
 .contenedortiempoPequeno{
+    font-family: Roboto, sans-serif;
     display: flex;
     position: absolute;
     gap: 2vw;

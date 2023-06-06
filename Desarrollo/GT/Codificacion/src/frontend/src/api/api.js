@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "../src/frontend/src/js/App.js";
+import App from "./Componentes/App";
+import "../css/styles.css";
+import "./App.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -8,4 +10,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-

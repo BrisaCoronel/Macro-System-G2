@@ -1,0 +1,78 @@
+/* Historial.css */
+
+.historial {
+    margin: 20px;
+  }
+  
+  .contenedores {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contenedor-historial-izq,
+  .contenedor-historial-der {
+    flex-basis: 48%;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .contenedor-izq-head,
+  .contenedor-der-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-izq-head p,
+  .contenedor-der-head p {
+    font-weight: bold;
+  }
+  
+  .contenedor-día {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .contenedor-izq-imagenes,
+  .contenedor-der-imagenes {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .imgizq1,
+  .imgcentr1,
+  .imgder1,
+  .imgizq2,
+  .imgcentr2,
+  .imgder2 {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .contenedor-izq-descripcion,
+  .contenedor-der-descripcion {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .descripcion-izq-texto-desayuno,
+  .descripcion-izq-texto-almuerzo,
+  .descripcion-izq-texto-cena,
+  .descripcion-der-texto-desayuno,
+  .descripcion-der-texto-almuerzo,
+  .descripcion-der-texto-cena {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .descripcion-izq-texto-desayuno:hover,
+  .descripcion-izq-texto-almuerzo:hover,
+  .descripcion-izq-texto-cena:hover,
+  .descripcion-der-texto-desayuno:hover,
+  .descripcion-der-texto-almuerzo:hover,
+  .descripcion-der-texto-cena:hover {
+    text-decoration: underline;
+  }
+  

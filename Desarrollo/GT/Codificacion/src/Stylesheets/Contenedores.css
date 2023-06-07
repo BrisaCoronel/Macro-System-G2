@@ -1,6 +1,6 @@
 .contenedores{
   display: flex;
-  gap: 12vw;
+  gap: 2vw;
   padding-top: 8.5vh;
   margin-bottom: 11vh;
   width: 40vw;
@@ -28,12 +28,10 @@
   line-height: 0;
 }
 .contenedorpequeno{
-  font-family: Roboto, sans-serif;
   position: relative; 
   width: 22vw;
   height: 8vh;
-  top: 20vh;
-  left: 61vw;
+  left: 63vw;
   padding-top: 1vh;
   padding-bottom:2vh;
   border-radius: 50px;
@@ -65,7 +63,6 @@ header {
   }
   
   #nav ul {
-    font-family: Roboto, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 50px;

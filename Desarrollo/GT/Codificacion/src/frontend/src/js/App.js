@@ -3,6 +3,7 @@ import { Modal } from "../Componentes/Modal";
 import { Contenedorprincipal, Contenedorsec, Header } from "../Componentes/Contenedor-principal";
 import { ContenedorConteo, ContenedorTiempo } from "../Componentes/Conteo";
 import { Historial } from "../Componentes/Historial";
+import { ComponenteCommedor, ComponentePrincipal, ComponenteNutricional, ComponentePartes} from "../Componentes/InfoNutricional";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "../Stylesheets/App.css";
 function App() {
@@ -81,19 +82,70 @@ function App() {
         <Routes>
           <Route path="/historial" element={
             <div>
-              {historialComidas.map((comida, index) => (
+              
                 <Historial
-                  key={index}
-                  date1={comida[0]}
-                  imagenizq1={comida[1]}
-                  imagencentr1={comida[2]}
-                  imagender1={comida[3]}
-                  date2={comida[4]}
-                  imagenizq2={comida[5]}
-                  imagencentr2={comida[6]}
-                  imagender2={comida[7]}
+                  date1="20/04/2023"
+                  imagenizq1="desayuno1"
+                  imagencentr1="almuerzo1"
+                  imagender1="cena1"
+                  date2="21/04/2023"
+                  imagenizq2="desayuno2"
+                  imagencentr2="almuerzo2"
+                  imagender2="cena2"
+                  date3="22/04/2023"
+                  imagenizq3="desayuno3"
+                  imagencentr3="almuerzo3"
+                  imagender3="cena3"
+                  date4="23/04/2023"
+                  imagenizq4="desayuno4"
+                  imagencentr4="almuerzo4"
+                  imagender4="cena4"
                 />
-              ))}
+              
+            </div>
+          } />
+        </Routes>
+        <Routes>
+          <Route path="/informacionNutricional" element={
+            <div>
+                <ComponenteCommedor
+                  date="22/04/2023"
+                />
+                <ComponentePrincipal
+                  imagenizq="desayuno3"
+                  imagencentr="almuerzo3"
+                  imagender="cena3"
+                  descripcionizq="Bebida: Semola con chocolate
+                  Fruta: plátano"
+                  descripcioncentr="Entrada: Mazamorra de piña
+                  Plato de fondo: chaufa de pollo"
+                  descripcionder ="Plato de fondo: Cau CAu de pollo"
+                  complementosizq ="Pan con mantequilla
+                  Pan con queso"
+                  complementoscentr="Vaso de refresco de cocona
+                  Fruta: pera"
+                  complementosder="Vaso de refresco anpis
+                  Fruta: Sandía"
+                />
+                <ComponentePartes
+                  imgcaloria="caloria"
+                  imggrasa="grasa"
+                  imgproteina="proteina"
+                  imgcarbohidrato="carbohidrato"
+                  caloriaizq="800"
+                  grasaizq="20"
+                  proteinaizq="80"
+                  carbohidratoizq="20"
+                  caloriacentr="800"
+                  grasacentr="20"
+                  proteinacentr="80"
+                  carbohidratocentr="20"
+                  caloriader="800"
+                  grasader="20"
+                  proteinader="80"
+                  carbohidratoder="20"
+                />  
+              
             </div>
           } />
         </Routes>

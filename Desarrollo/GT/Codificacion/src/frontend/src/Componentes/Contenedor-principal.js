@@ -6,7 +6,7 @@ export function Contenedorprincipal(props) {
   return (
     <div className="contenedores">
       <div className='Contenedorizq'>
-        <img className='imgizq'
+        <img className='imgizqC'
           src={require(`../imagenes/${props.imagen}.png`)}
           alt='Imagen izq' />
         <div className='contenedorizq-texto'></div>

@@ -99,15 +99,17 @@ header {
     height: 5rem; /* establece la altura de la imagen a 50 píxeles */
     width: auto; /* ajusta el ancho de la imagen de manera proporcional a su altura */
     border: none; /* elimina el borde alrededor de la imagen */
+
   }
 
   .Contenedorizq {
     flex: 1;
     height: 50vh; 
+    width: 50vw;
     background-color: rgb(0 0 0 /0.47);
 
   }
-  .imgizq {
+  .imgizqC {
     padding-top: 2vh;
     padding-right: 1vw;
     height: 46vh; /* establece la altura de la imagen a 50 píxeles */

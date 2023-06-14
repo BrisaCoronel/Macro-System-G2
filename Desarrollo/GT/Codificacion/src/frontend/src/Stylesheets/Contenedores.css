@@ -1,6 +1,6 @@
 .contenedores{
   display: flex;
-  gap: 2vw;
+  gap: 12vw;
   padding-top: 8.5vh;
   margin-bottom: 11vh;
   width: 40vw;
@@ -28,10 +28,12 @@
   line-height: 0;
 }
 .contenedorpequeno{
+  font-family: Roboto, sans-serif;
   position: relative; 
   width: 22vw;
   height: 8vh;
-  left: 63vw;
+  top: 20vh;
+  left: 61vw;
   padding-top: 1vh;
   padding-bottom:2vh;
   border-radius: 50px;
@@ -63,6 +65,7 @@ header {
   }
   
   #nav ul {
+    font-family: Roboto, sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 50px;
@@ -96,15 +99,17 @@ header {
     height: 5rem; /* establece la altura de la imagen a 50 píxeles */
     width: auto; /* ajusta el ancho de la imagen de manera proporcional a su altura */
     border: none; /* elimina el borde alrededor de la imagen */
+
   }
 
   .Contenedorizq {
     flex: 1;
     height: 50vh; 
+    width: 50vw;
     background-color: rgb(0 0 0 /0.47);
 
   }
-  .imgizq {
+  .imgizqC {
     padding-top: 2vh;
     padding-right: 1vw;
     height: 46vh; /* establece la altura de la imagen a 50 píxeles */
